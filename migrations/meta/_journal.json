@@ -15,6 +15,27 @@
       "when": 1739436063763,
       "tag": "0001_stale_pepper_potts",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1739449614843,
+      "tag": "0002_mature_vivisector",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1739449837892,
+      "tag": "0003_plain_pandemic",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1739454891064,
+      "tag": "0004_youthful_mentor",
+      "breakpoints": true
     }
   ]
 }

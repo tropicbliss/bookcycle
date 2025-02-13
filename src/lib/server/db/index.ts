@@ -1,4 +1,4 @@
-import { drizzle, DrizzleD1Database } from "drizzle-orm/d1";
+import { drizzle, type DrizzleD1Database } from "drizzle-orm/d1";
 
 let drizzleInstance:
     | DB

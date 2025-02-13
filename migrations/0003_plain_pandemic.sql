@@ -1,0 +1,1 @@
+CREATE INDEX `user_idx` ON `inventory` (`user_id`);
