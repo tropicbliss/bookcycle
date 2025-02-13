@@ -56,7 +56,7 @@ The application should now be running at `http://localhost:3000`
 
 ## Technical Architecture
 
-- **Frontend**: React-based user interface
+- **Frontend**: Svelte-based user interface
 - **Backend**: Node.js server
 - **Database**: D1 (Cloudflare's SQL database)
 - **Authentication**: Custom password-based authentication system
