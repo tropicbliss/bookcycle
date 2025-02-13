@@ -40,7 +40,7 @@
 				</a>
 				<a href="/browse" class="hover:text-foreground"> Browse </a>
 				{#if isLoggedIn}
-					<a href="/inventory" class="text-muted-foreground hover:text-foreground"> Inventory </a>
+					<a href="/inventory" class="hover:text-foreground"> Inventory </a>
 				{/if}
 			</nav>
 		</Sheet.Content>
@@ -55,11 +55,6 @@
 					</Button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content align="end">
-					<DropdownMenu.Label>My Account</DropdownMenu.Label>
-					<DropdownMenu.Separator />
-					<DropdownMenu.Item>Settings</DropdownMenu.Item>
-					<DropdownMenu.Item>Support</DropdownMenu.Item>
-					<DropdownMenu.Separator />
 					<DropdownMenu.Item>
 						<form method="post" action="/auth/?/logout" use:enhance>
 							<button class="cursor-default">Logout</button>
