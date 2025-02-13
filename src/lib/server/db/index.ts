@@ -1,6 +1,16 @@
-import { drizzle } from 'drizzle-orm/libsql';
-import { createClient } from '@libsql/client';
-import { env } from '$env/dynamic/private';
-if (!env.DATABASE_URL) throw new Error('DATABASE_URL is not set');
-const client = createClient({ url: env.DATABASE_URL });
-export const db = drizzle(client);
+import { drizzle, DrizzleD1Database } from "drizzle-orm/d1";
+
+let drizzleInstance:
+    | DB
+    | undefined;
+
+export function getDb(db: D1Database) {
+    if (drizzleInstance === undefined) {
+        drizzleInstance = drizzle(db);
+    }
+    return drizzleInstance;
+}
+
+export type DB = DrizzleD1Database<Record<string, never>> & {
+    $client: D1Database;
+};

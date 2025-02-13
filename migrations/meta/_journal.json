@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1739431709828,
+      "tag": "0000_fair_tombstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1739436063763,
+      "tag": "0001_stale_pepper_potts",
+      "breakpoints": true
+    }
+  ]
+}
